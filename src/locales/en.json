@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "HOME",
+    "projects": "PROJECTS",
+    "about": "ABOUT",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "role": "Frontend / Full-Stack Developer",
+    "location": "Kyrgyzstan",
+    "summary": "I build thoughtful, human-centered web experiences — where clean code meets empathy, clarity, and purpose.",
+    "cta": "View Projects"
+  },
+  "featured": {
+    "badge": "Live Production Project",
+    "title": "Batken Travels",
+    "subtitle": "Full-Stack Travel Booking Platform",
+    "description": "A complete travel booking web application with user authentication, tour search, booking system, admin dashboard, and multilingual support. Built from scratch with React, Node.js, Express, and MongoDB.",
+    "liveUrl": "batkentravels.com",
+    "tempUrl": "batkentravels.netlify.app",
+    "viewLive": "View Live Site",
+    "features": {
+      "title": "Key Features",
+      "items": [
+        "User Authentication & Protected Routes",
+        "Dynamic Tour Search & Filtering",
+        "Complete Booking System",
+        "Admin Dashboard for Management",
+        "Multilingual Support (EN/RU/KG)",
+        "Fully Responsive Design",
+        "Image Upload with Cloudinary",
+        "SEO Optimized"
+      ]
+    },
+    "tech": {
+      "title": "Tech Stack",
+      "frontend": "React.js, CSS3, Axios, React Router",
+      "backend": "Node.js, Express, MongoDB, Cloudinary",
+      "features": "JWT Auth, REST API, Nodemailer"
+    }
+  },
+  "about": {
+    "title": "Who I Am",
+    "subtitle": "A Human-Centered Approach to Development",
+    "intro": "I'm a purpose-driven frontend developer who believes that technology should first serve people, not just systems.",
+    "philosophy": {
+      "title": "What I Care About",
+      "items": [
+        {
+          "label": "Clarity over complexity",
+          "description": "Simple solutions that everyone can understand"
+        },
+        {
+          "label": "Accessibility over aesthetics alone",
+          "description": "Beautiful design that works for everyone"
+        },
+        {
+          "label": "Real users over abstract features",
+          "description": "Building what people actually need"
+        }
+      ]
+    },
+    "thinking": {
+      "title": "How I Think",
+      "description": "I'm naturally reflective and detail-oriented. Before writing code, I think about:",
+      "items": [
+        "User emotions",
+        "Ease of understanding",
+        "First-time experience",
+        "Long-term maintainability"
+      ]
+    },
+    "values": {
+      "title": "My Values",
+      "items": [
+        {
+          "icon": "🎯",
+          "label": "Responsibility",
+          "description": "If I build something, I stand behind it"
+        },
+        {
+          "icon": "🌱",
+          "label": "Growth",
+          "description": "I learn continuously and intentionally"
+        },
+        {
+          "icon": "🤝",
+          "label": "Respect",
+          "description": "For users, teammates, and myself"
+        },
+        {
+          "icon": "💬",
+          "label": "Honesty",
+          "description": "In communication and in code"
+        }
+      ]
+    },
+    "work": {
+      "title": "How I Work",
+      "description": "I work best in environments where:",
+      "items": [
+        "Collaboration is encouraged",
+        "Learning is supported",
+        "Mistakes are part of the process"
+      ]
+    },
+    "goal": {
+      "title": "My Goal",
+      "description": "My goal is not just to 'get a job'. My goal is to:",
+      "items": [
+        "Grow into a strong, ethical engineer",
+        "Contribute to products that help people",
+        "Work in teams where humanity and technology coexist"
+      ]
+    },
+    "education": "Education",
+    "university": "Batken State University",
+    "degree": "Faculty of English Language Teaching (4th year)",
+    "period": "2021 – Present",
+    "languages": "Languages"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewProject": "View Project",
+    "sourceCode": "Source Code"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "email": "Email",
+    "phone": "Phone",
+    "github": "GitHub",
+    "send": "Send Message"
+  },
+  "footer": {
+    "rights": "© 2025 Zarina. All rights reserved."
+  }
+}

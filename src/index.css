@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --primary: #8b5cf6;
+  }
+
+  .dark {
+    --background: #030712;
+    --foreground: #ffffff;
+    --primary: #a78bfa;
+  }
+
+  body {
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+    @apply transition-colors duration-500;
+  }
+}
+
+.hero-title {
+  color: var(--foreground);
+}
