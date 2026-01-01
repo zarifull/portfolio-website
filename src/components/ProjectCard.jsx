@@ -1,12 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Github, ExternalLink } from 'lucide-react';
 
-export function ProjectCard({ title, description, tags, icon, type, links }) {
+export function ProjectCard({ title, description, tags, icon: Icon, type, links }) {
+  const { t } = useTranslation();
+
   return (
     <article className="bg-white dark:bg-slate-900 rounded-[2.5rem] p-10 border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
       <div className="flex justify-between items-start mb-8">
         <div className="p-4 bg-violet-50 dark:bg-violet-900/20 rounded-2xl text-violet-500">
-          {icon}
+          <Icon size={32} />
         </div>
         <span className="px-4 py-1.5 bg-violet-50 dark:bg-violet-900/20 text-violet-600 dark:text-violet-400 text-xs font-bold uppercase tracking-wider rounded-full">
           {type}
@@ -36,7 +39,7 @@ export function ProjectCard({ title, description, tags, icon, type, links }) {
           className="flex-1 bg-[#0F172A] dark:bg-white text-white dark:text-slate-900 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
         >
           <ExternalLink size={20} />
-          View Project
+          {t('projects.viewProject')}
         </a>
         <a 
           href={links?.github || "#"} 
@@ -48,5 +51,4 @@ export function ProjectCard({ title, description, tags, icon, type, links }) {
     </article>
   );
 }
-
-export default ProjectCard;
+ export default ProjectCard;

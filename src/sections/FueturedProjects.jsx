@@ -52,32 +52,40 @@ export function FeaturedProject() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 w-full">
               <a
                 href="https://batkentravels.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 px-10 py-5 bg-violet-600 hover:bg-violet-700 text-white font-black uppercase text-xs tracking-widest rounded-2xl transition-all shadow-xl shadow-violet-500/20"
+                className="flex-1 flex items-center justify-center gap-3 px-10 py-5 bg-violet-600 hover:bg-violet-700 text-white font-black uppercase text-xs tracking-widest rounded-2xl transition-all shadow-xl shadow-violet-500/20"
               >
                 <Globe className="w-5 h-5" />
                 {t('featured.viewLive')}
                 <ExternalLink className="w-4 h-4" />
               </a>
-              <div className="flex items-center justify-center px-8 py-5 bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 rounded-2xl">
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
+              <div className="flex-1 flex items-center justify-center px-8 py-5 bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 rounded-2xl">
+                <span className="text-xs font-bold uppercase tracking-widest text-slate-400 text-center">
                   {t('featured.liveUrl')} <span className="text-violet-500 italic lowercase ml-1">(coming soon)</span>
                 </span>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-4 p-4 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-white dark:border-slate-700 shadow-sm">
-                  <div className="text-violet-600 dark:text-violet-400">{feature.icon}</div>
-                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300">{feature.text}</span>
+                <div 
+                  key={index} 
+                  className="flex items-center gap-4 p-4 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-white dark:border-slate-700 shadow-sm"
+                >
+                  <div className="text-violet-600 dark:text-violet-400 shrink-0">
+                    {feature.icon}
+                  </div>
+                  <span className="text-sm font-medium text-slate-700 dark:text-slate-300">
+                    {feature.text}
+                  </span>
                 </div>
               ))}
             </div>
+
           </div>
 
           <div className="relative w-full">

@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next'; 
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   GraduationCap,
   Heart,
@@ -7,37 +7,37 @@ import {
   Target,
   BookOpen,
   Users,
-} from 'lucide-react';
+} from 'lucide-react'
 
 export function About() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <section
       id="about"
-      className="py-24 bg-white dark:bg-[#030712] transition-colors duration-500"
+      className="py-24 bg-white dark:bg-slate-900 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white mb-6 uppercase tracking-tighter">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-3">
             {t('about.title')}
           </h2>
-          <p className="text-lg text-violet-600 dark:text-violet-400 font-bold uppercase tracking-widest">
+          <p className="text-lg text-violet-600 dark:text-violet-400 font-medium">
             {t('about.subtitle')}
           </p>
-          <div className="w-24 h-2 bg-violet-500 mx-auto rounded-full mt-6"></div>
+          <div className="w-20 h-1 bg-violet-500 mx-auto rounded-full mt-6"></div>
         </div>
 
         <div className="max-w-3xl mx-auto mb-20">
-          <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed text-center italic font-medium">
-            "{t('about.intro')}"
+          <p className="text-xl text-slate-700 dark:text-slate-300 leading-relaxed text-center">
+            {t('about.intro')}
           </p>
         </div>
 
         <div className="mb-20">
           <div className="flex items-center gap-3 mb-8">
-            <Heart className="w-8 h-8 text-violet-500" />
-            <h3 className="text-2xl font-black text-slate-900 dark:text-white uppercase">
+            <Heart className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
               {t('about.philosophy.title')}
             </h3>
           </div>
@@ -45,9 +45,9 @@ export function About() {
             {t('about.philosophy.items', { returnObjects: true }).map((item, index) => (
               <div
                 key={index}
-                className="p-8 rounded-[2rem] bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800"
+                className="p-6 bg-violet-50 dark:bg-violet-900/10 rounded-xl border-2 border-violet-100 dark:border-violet-900/30"
               >
-                <h4 className="text-lg font-bold text-violet-500 mb-2">
+                <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
                   {item.label}
                 </h4>
                 <p className="text-slate-600 dark:text-slate-400">
@@ -60,21 +60,21 @@ export function About() {
 
         <div className="mb-20 max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-6">
-            <Lightbulb className="w-8 h-8 text-violet-500" />
-            <h3 className="text-2xl font-black text-slate-900 dark:text-white uppercase">
+            <Lightbulb className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
               {t('about.thinking.title')}
             </h3>
           </div>
-          <p className="text-lg text-slate-600 dark:text-slate-400 mb-6 font-medium">
+          <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">
             {t('about.thinking.description')}
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
             {t('about.thinking.items', { returnObjects: true }).map((item, index) => (
               <div
                 key={index}
-                className="px-4 py-3 bg-white dark:bg-slate-800 rounded-full text-center border border-slate-100 dark:border-slate-700 shadow-sm"
+                className="px-4 py-3 bg-slate-50 dark:bg-slate-800 rounded-lg text-center border border-gray-100 dark:border-slate-700"
               >
-                <span className="text-slate-700 dark:text-slate-300 font-bold text-sm uppercase">
+                <span className="text-slate-700 dark:text-slate-300 font-medium">
                   {item}
                 </span>
               </div>
@@ -84,8 +84,8 @@ export function About() {
 
         <div className="mb-20">
           <div className="flex items-center gap-3 mb-8">
-            <Target className="w-8 h-8 text-violet-500" />
-            <h3 className="text-2xl font-black text-slate-900 dark:text-white uppercase">
+            <Target className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
               {t('about.values.title')}
             </h3>
           </div>
@@ -93,14 +93,14 @@ export function About() {
             {t('about.values.items', { returnObjects: true }).map((value, index) => (
               <div
                 key={index}
-                className="flex gap-4 p-8 bg-slate-50 dark:bg-slate-900/50 rounded-[2rem] border border-slate-100 dark:border-slate-800"
+                className="flex gap-4 p-6 bg-slate-50 dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700"
               >
                 <div className="text-4xl">{value.icon}</div>
                 <div>
-                  <h4 className="text-xl font-black text-slate-900 dark:text-white mb-2 uppercase">
+                  <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
                     {value.label}
                   </h4>
-                  <p className="text-slate-600 dark:text-slate-400 font-medium">
+                  <p className="text-slate-600 dark:text-slate-400">
                     {value.description}
                   </p>
                 </div>
@@ -110,18 +110,43 @@ export function About() {
         </div>
 
         <div className="mb-20 max-w-4xl mx-auto">
-          <div className="p-10 bg-gradient-to-br from-violet-600 to-indigo-700 rounded-[2.5rem] text-white shadow-xl shadow-violet-500/20">
-            <h3 className="text-3xl font-black mb-6 uppercase tracking-tighter">
+          <div className="flex items-center gap-3 mb-6">
+            <Users className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
+              {t('about.work.title')}
+            </h3>
+          </div>
+          <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">
+            {t('about.work.description')}
+          </p>
+          <div className="space-y-3">
+            {t('about.work.items', { returnObjects: true }).map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-3 p-4 bg-white dark:bg-slate-800 rounded-lg border border-gray-100 dark:border-slate-700"
+              >
+                <div className="w-2 h-2 bg-violet-500 rounded-full"></div>
+                <span className="text-slate-700 dark:text-slate-300 font-medium">
+                  {item}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-20 max-w-4xl mx-auto">
+          <div className="p-8 bg-gradient-to-br from-violet-50 to-blue-50 dark:from-violet-900/10 dark:to-blue-900/10 rounded-2xl border-2 border-violet-200 dark:border-violet-900/30">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
               {t('about.goal.title')}
             </h3>
-            <p className="text-xl text-violet-100 mb-8 font-medium">
+            <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">
               {t('about.goal.description')}
             </p>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {t('about.goal.items', { returnObjects: true }).map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="mt-2 w-2 h-2 bg-white rounded-full"></div>
-                  <span className="text-lg font-medium italic">
+                  <div className="mt-1.5 w-1.5 h-1.5 bg-violet-600 dark:bg-violet-400 rounded-full"></div>
+                  <span className="text-slate-700 dark:text-slate-300 font-medium">
                     {item}
                   </span>
                 </div>
@@ -131,54 +156,65 @@ export function About() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="p-8 bg-slate-50 dark:bg-slate-900/50 rounded-3xl border border-slate-100 dark:border-slate-800">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="p-3 bg-white dark:bg-slate-800 rounded-xl shadow-sm">
-                <GraduationCap className="w-6 h-6 text-violet-500" />
+          <div className="p-6 bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 bg-violet-50 dark:bg-violet-900/20 rounded-lg">
+                <GraduationCap className="w-5 h-5 text-violet-600 dark:text-violet-400" />
               </div>
-              <h3 className="text-2xl font-black text-slate-900 dark:text-white uppercase">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white">
                 {t('about.education')}
               </h3>
             </div>
-            <p className="text-xl font-bold text-slate-900 dark:text-white">
+            <p className="text-slate-700 dark:text-slate-300 font-medium">
               {t('about.university')}
             </p>
-            <p className="text-lg text-slate-600 dark:text-slate-400 mt-1">
+            <p className="text-slate-600 dark:text-slate-400 mt-1">
               {t('about.degree')}
             </p>
-            <p className="text-sm font-black text-violet-500 mt-4 uppercase tracking-widest">
+            <p className="text-sm text-slate-500 dark:text-slate-500 mt-2">
               {t('about.period')}
             </p>
           </div>
 
-          <div className="p-8 bg-slate-50 dark:bg-slate-900/50 rounded-3xl border border-slate-100 dark:border-slate-800">
-            <div className="flex items-center gap-4 mb-8">
-              <div className="p-3 bg-white dark:bg-slate-800 rounded-xl shadow-sm">
-                <BookOpen className="w-6 h-6 text-violet-500" />
+          <div className="p-6 bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400" />
               </div>
-              <h3 className="text-2xl font-black text-slate-900 dark:text-white uppercase">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white">
                 {t('about.languages')}
               </h3>
             </div>
-            <div className="space-y-4">
-              {[
-                { name: 'Kyrgyz', level: 'Native', color: 'bg-green-500' },
-                { name: 'English', level: 'B2', color: 'bg-blue-500' },
-                { name: 'Russian', level: 'B1', color: 'bg-violet-500' }
-              ].map((lang) => (
-                <div key={lang.name} className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-slate-800 dark:text-slate-200">{lang.name}</span>
-                  <span className={`px-4 py-1 ${lang.color} text-white text-[10px] font-black rounded-full uppercase tracking-tighter`}>
-                    {lang.level}
-                  </span>
-                </div>
-              ))}
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-slate-700 dark:text-slate-300">
+                  Kyrgyz
+                </span>
+                <span className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-semibold rounded">
+                  Native
+                </span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-slate-700 dark:text-slate-300">
+                  English
+                </span>
+                <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs font-semibold rounded">
+                  B2
+                </span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-slate-700 dark:text-slate-300">
+                  Russian
+                </span>
+                <span className="px-2 py-1 bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-400 text-xs font-semibold rounded">
+                  B1
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
-
-export default About;
+export default About

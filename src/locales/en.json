@@ -9,7 +9,8 @@
     "role": "Frontend / Full-Stack Developer",
     "location": "Kyrgyzstan",
     "summary": "I build thoughtful, human-centered web experiences — where clean code meets empathy, clarity, and purpose.",
-    "cta": "View Projects"
+    "cta": "View Projects",
+    "availability": "Available for new opportunities"
   },
   "featured": {
     "badge": "Live Production Project",
@@ -125,17 +126,43 @@
     "backend": "Backend",
     "tools": "Tools"
   },
-  "projects": {
-    "title": "Featured Projects",
-    "viewProject": "View Project",
-    "sourceCode": "Source Code"
-  },
   "contact": {
     "title": "Get In Touch",
     "email": "Email",
     "phone": "Phone",
     "github": "GitHub",
     "send": "Send Message"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewProject": "View Project",
+    "sourceCode": "Source Code",
+    "items": [
+      {
+        "title": "Full Authentication System",
+        "description": "Advanced security system with JWT, OTP verification, and role-based access control. Features multilingual support and professional UI flows.",
+        "type": "Full Stack",
+        "tags": ["React", "Node.js", "MongoDB", "JWT"]
+      },
+      {
+        "title": "Booking System",
+        "description": "Comprehensive tour booking platform with search, filtering, and WhatsApp integration. Includes admin dashboard for managing tours and bookings.",
+        "type": "Full Stack",
+        "tags": ["MERN Stack", "WhatsApp API", "Cloudinary"]
+      },
+      {
+        "title": "Admin Dashboard",
+        "description": "Role-based administration panel with dynamic data tables, real-time updates, and multi-language support for content management.",
+        "type": "Backend / UI",
+        "tags": ["React", "Express", "Data Viz"]
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "Modern, responsive developer portfolio with dark mode, internationalization, and clean architectural design.",
+        "type": "Frontend",
+        "tags": ["React", "Tailwind", "i18next"]
+      }
+    ]
   },
   "footer": {
     "rights": "© 2025 Zarina. All rights reserved."
