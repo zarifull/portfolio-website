@@ -6,6 +6,7 @@ import Footer from './sections/Footer';
 import { Projects } from './sections/Projects';
 import FeaturedProject from './sections/FueturedProjects';
 import Skills from './sections/Skills';
+import { About } from './sections/About';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 
@@ -49,6 +50,7 @@ function App() {
             <FeaturedProject />
             <Projects />
             <Skills />
+            <About />
            
           </section>
         </main>
