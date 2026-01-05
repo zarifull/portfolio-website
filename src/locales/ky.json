@@ -126,17 +126,20 @@
     "backend": "Backend",
     "tools": "Куралдар"
   },
-  "projects": {
-    "title": "Тандалган Долбоорлор",
-    "viewProject": "Долбоорду Көрүү",
-    "sourceCode": "Булак Коду"
-  },
   "contact": {
     "title": "Байланышуу",
-    "email": "Email",
-    "phone": "Телефон",
-    "github": "GitHub",
-    "send": "Жөнөтүү"
+    "emailLabel": "Email",
+    "phoneLabel": "Телефон",
+    "githubLabel": "GitHub",
+    "nameLabel": "Атыңыз",
+    "namePlaceholder": "Атыңызды жазыңыз",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Билдирүү",
+    "messagePlaceholder": "Кандай жардам бере алам?",
+    "sending":"жөнөтүлүүдө",
+    "send": "Билдирүү жөнөтүү",
+    "status": "Жумушка даярмын",
+    "successMessage": "Билдирүүңүз үчүн рахмат! Мен сиз менен жакын арада байланышам."
   },
   "projects": {
     "title": "Тандалган Долбоорлор",

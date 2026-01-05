@@ -128,10 +128,18 @@
   },
   "contact": {
     "title": "Get In Touch",
-    "email": "Email",
-    "phone": "Phone",
-    "github": "GitHub",
-    "send": "Send Message"
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "githubLabel": "GitHub",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "How can I help you?",
+    "sending": "sending",
+    "send": "Send Message",
+    "status": "Available for work",
+    "successMessage": "Thank you! Your message has been sent."
   },
   "projects": {
     "title": "Featured Projects",

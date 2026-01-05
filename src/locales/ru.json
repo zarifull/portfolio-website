@@ -127,11 +127,19 @@
     "tools": "Инструменты"
   },
   "contact": {
-    "title": "Связаться",
-    "email": "Email",
-    "phone": "Телефон",
-    "github": "GitHub",
-    "send": "Отправить"
+    "title": "Связаться со мной",
+    "emailLabel": "Email",
+    "phoneLabel": "Телефон",
+    "githubLabel": "GitHub",
+    "nameLabel": "Имя",
+    "namePlaceholder": "Ваше имя",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Сообщение",
+    "messagePlaceholder": "Чем я могу вам помочь?",
+    "sending":"отправка",
+    "send": "Отправить сообщение",
+    "status": "Открыта к предложениям",
+    "successMessage": "Спасибо за ваше сообщение! Я свяжусь с вами в ближайшее время."
   },
   "projects": {
     "title": "Избранные Проекты",

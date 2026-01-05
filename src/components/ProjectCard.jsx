@@ -4,7 +4,7 @@ import { Github, ExternalLink } from 'lucide-react';
 
 export function ProjectCard({ title, description, tags, icon: Icon, type, links }) {
   const { t } = useTranslation();
-
+  console.log("Links for", title, ":", links);
   return (
     <article className="bg-white dark:bg-slate-900 rounded-[2.5rem] p-10 border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
       <div className="flex justify-between items-start mb-8">
@@ -35,14 +35,16 @@ export function ProjectCard({ title, description, tags, icon: Icon, type, links 
 
       <div className="flex gap-4">
         <a 
-          href={links?.demo || "#"} 
+          href={links?.demo} 
+          target='_blank'
           className="flex-1 bg-[#0F172A] dark:bg-white text-white dark:text-slate-900 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
         >
           <ExternalLink size={20} />
           {t('projects.viewProject')}
         </a>
         <a 
-          href={links?.github || "#"} 
+          href={links?.github} 
+          target='_blank'
           className="w-14 h-14 border border-gray-200 dark:border-slate-700 rounded-xl flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
         >
           <Github size={22} />

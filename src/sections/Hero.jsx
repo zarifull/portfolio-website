@@ -64,16 +64,23 @@ export default function Hero() {
           <div className="absolute w-[120%] h-[120%] bg-violet-500/5 rounded-full blur-[100px] -z-10" />
           
           <motion.div
-  initial={{ opacity: 0, y: 40 }}
-  animate={{ opacity: 1, y: [0, -10, 0] }}
-  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-  className="relative z-10 w-full flex justify-center -mt-24 sm:-mt-28 md:-mt-48 lg:-mt-64" 
->
-  <img 
-    src={myPhoto} 
-    className="w-[90%] sm:w-[75%] md:w-full max-w-[320px] md:max-w-[550px] lg:max-w-[650px] h-auto object-contain drop-shadow-[0_20px_40px_rgba(139,92,246,0.3)]"
-  />
-</motion.div>
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            
+            animate={{ y: [0, -20, 0] }} 
+            transition={{ 
+              opacity: { duration: 1 }, 
+              y: { duration: 5, repeat: Infinity, ease: "easeInOut" } 
+            }}
+            className="relative z-10 w-full flex justify-center -mt-24 sm:-mt-28 md:-mt-48 lg:-mt-64" 
+          >
+            <img 
+              src={myPhoto} 
+              alt="Zarina"
+              className="w-[90%] sm:w-[75%] md:w-full max-w-[320px] md:max-w-[550px] lg:max-w-[650px] h-auto object-contain drop-shadow-[0_20px_40px_rgba(139,92,246,0.3)]"
+            />
+          </motion.div>
         </div>
  
       </div>
