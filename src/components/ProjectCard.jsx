@@ -4,7 +4,6 @@ import { Github, ExternalLink } from 'lucide-react';
 
 export function ProjectCard({ title, description, tags, icon: Icon, type, links }) {
   const { t } = useTranslation();
-  console.log("Links for", title, ":", links);
   return (
     <article className="bg-white dark:bg-slate-900 rounded-[2.5rem] p-10 border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
       <div className="flex justify-between items-start mb-8">

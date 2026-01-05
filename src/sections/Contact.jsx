@@ -15,19 +15,26 @@ export default function Contact() {
     e.preventDefault();
     setIsSending(true);
 
-   
+    console.log("Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+      if (!import.meta.env.VITE_EMAILJS_PUBLIC_KEY) {
+        alert("Public Key табылган жок! .env файлын текшериңиз.");
+        return;
+      }
+
     emailjs.sendForm(
-      'service_anru6dg',   
-      'template_h3d16s5',  
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,   
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,  
       form.current, 
-      '0tTFZwarP6i2lg0B4'   
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY   
     )
     .then((result) => {
         alert(t('contact.successMessage') || "Message sent!");
         setFormData({ name: '', email: '', message: '' });
         form.current.reset();
     }, (error) => {
-        alert("Error: " + error.text);
+        console.error("EmailJS Error:", error);
+        alert(t('contact.errorMessage') || "Error: " + error.text);
     })
     .finally(() => {
         setIsSending(false);
