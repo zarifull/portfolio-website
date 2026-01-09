@@ -11,35 +11,33 @@ export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSending, setIsSending] = useState(false); 
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSending(true);
+const handleSubmit = (e) => {
+  e.preventDefault();
+  
+  if (!import.meta.env.VITE_EMAILJS_PUBLIC_KEY) {
+    console.error("EmailJS Public Key is missing!");
+    return;
+  }
 
-    console.log("Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  setIsSending(true);
 
-      if (!import.meta.env.VITE_EMAILJS_PUBLIC_KEY) {
-        alert("Public Key табылган жок! .env файлын текшериңиз.");
-        return;
-      }
-
-    emailjs.sendForm(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,   
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,  
-      form.current, 
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY   
-    )
-    .then((result) => {
-        alert(t('contact.successMessage') || "Message sent!");
-        setFormData({ name: '', email: '', message: '' });
-        form.current.reset();
-    }, (error) => {
-        console.error("EmailJS Error:", error);
-        alert(t('contact.errorMessage') || "Error: " + error.text);
-    })
-    .finally(() => {
-        setIsSending(false);
-    });
-  };
+  emailjs.sendForm(
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,   
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,  
+    form.current, 
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY   
+  )
+  .then((result) => {
+      alert(t('contact.successMessage') || "Message sent!");
+      setFormData({ name: '', email: '', message: '' });
+      form.current.reset();
+  }, (error) => {
+      alert("Error: " + error.text);
+  })
+  .finally(() => {
+      setIsSending(false);
+  });
+};
 
   return (
     <section id="contact" className="py-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
