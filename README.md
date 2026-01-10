@@ -1,16 +1,60 @@
-# React + Vite
+🚀 Professional Portfolio | Zarina
+A modern, high-performance personal portfolio website built with React 18, Vite, and Tailwind CSS. This project showcases my work, skills, and provides a direct channel for communication via an integrated contact form.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Key Features
+🌍 Multi-language Support: Fully localized in English, Russian, and Kyrgyz using i18next.
 
-Currently, two official plugins are available:
+🌙 Dark Mode Optimized: Seamless theme switching between light and dark modes using Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📱 Fully Responsive: Optimized for all devices—from small mobile screens to large desktop monitors.
 
-## React Compiler
+📩 Contact Integration: Functional contact form powered by EmailJS (direct-to-email delivery).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚡ Blazing Fast: Built with Vite for instant Hot Module Replacement (HMR) and optimized production builds.
 
-## Expanding the ESLint configuration
+🎨 Modern UI: Clean, professional aesthetic using Lucide React icons and smooth transitions.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+| Tool | Purpose |
+| :--- | :--- |
+| **React** | Component-based UI development |
+| **Vite** | Modern frontend build tool |
+| **Tailwind CSS** | Utility-first styling and responsive design |
+| **i18next** | Internationalization framework |
+| **EmailJS** | Client-side email integration |
+| **Lucide React** | High-quality SVG icon set |
+
+🚀 Getting Started
+To run this project locally, follow these steps:
+
+1. Clone the repository
+git clone https://github.com/zarifull/zari-dev-website.git
+cd zari-dev-website
+
+2. Install dependencies
+npm install
+
+3. Environment Variables
+Create a .env file in the root directory and add your EmailJS credentials:
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+
+4. Run Development Server
+npm run dev
+
+📦 Deployment
+This project is automatically deployed via Vercel. Every push to the main branch triggers a new production build.
+
+🔗 Live Demo: zari-dev-website.vercel.app
+
+📝 License
+This project is open-source and available under the MIT License.
+
+📫 Contact Me
+LinkedIn: zarina-momunbai
+
+GitHub: @zarifull
+
+Email: zaarinaakhan@gmail.com
+
