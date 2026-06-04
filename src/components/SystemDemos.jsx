@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ExternalLink, Film } from 'lucide-react';
 import { SYSTEM_DEMOS } from '../data/demoData';
@@ -7,9 +7,16 @@ export function SystemDemos() {
   const { t } = useTranslation();
   const [activeId, setActiveId] = useState(SYSTEM_DEMOS[0].id);
   const [videoReady, setVideoReady] = useState({});
+  const videoRef = useRef(null); 
 
   const activeDemo = SYSTEM_DEMOS.find((d) => d.id === activeId) ?? SYSTEM_DEMOS[0];
   const showPlaceholder = !videoReady[activeId];
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 2.0;
+    }
+  }, [activeId, videoReady]);
 
   return (
     <div className="mb-20 overflow-hidden">
@@ -52,6 +59,7 @@ export function SystemDemos() {
         <div className="relative aspect-video w-full max-h-[560px] overflow-hidden flex items-center justify-center p-2 md:p-4">
           <video
             key={activeDemo.id}
+            ref={videoRef}
             className={`max-w-full max-h-full object-contain rounded-xl shadow-md bg-transparent ${
               showPlaceholder ? 'opacity-0 absolute inset-0' : 'relative z-10'
             }`}
@@ -62,7 +70,12 @@ export function SystemDemos() {
             muted
             loop
             onError={() => setVideoReady((prev) => ({ ...prev, [activeId]: false }))}
-            onCanPlay={() => setVideoReady((prev) => ({ ...prev, [activeId]: true }))}
+            onCanPlay={() => {
+              if (videoRef.current) {
+                videoRef.current.playbackRate = 2.0;
+              }
+              setVideoReady((prev) => ({ ...prev, [activeId]: true }));
+            }}
           >
             {activeDemo.videoSources.map((source, index) => (
               <source key={index} src={source.src} type={source.type} />
