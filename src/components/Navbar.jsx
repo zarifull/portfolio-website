@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Sun, Moon, Menu, X, Globe } from 'lucide-react';
+import { Sun, Moon, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = ({ theme, toggleTheme }) => {
@@ -21,7 +21,7 @@ const Navbar = ({ theme, toggleTheme }) => {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full p-6 md:px-16 flex justify-between items-center z-[100] transition-all duration-500 ${
+    <nav className={`fixed top-0 w-full p-6 lg:px-16 flex justify-between items-center z-[100] transition-all duration-500 ${
       isScrolled 
         ? 'bg-white/90 dark:bg-[#030712]/90 backdrop-blur-xl border-b border-black/5 dark:border-white/10 py-4' 
         : 'bg-transparent py-8'
@@ -35,9 +35,9 @@ const Navbar = ({ theme, toggleTheme }) => {
         <span className="text-violet-500">.dev</span>
       </motion.div>
 
-      <div className="flex items-center gap-4 md:gap-10 z-[110]">
+      <div className="flex items-center gap-4 lg:gap-10 z-[110]">
         
-        <div className="hidden md:flex gap-10 text-[11px] font-bold uppercase tracking-[0.3em] text-gray-500 dark:text-slate-400">
+        <div className="hidden lg:flex gap-10 text-[11px] font-bold uppercase tracking-[0.3em] text-gray-500 dark:text-slate-400">
           {navLinks.map((link) => (
             <a 
               key={link.name} 
@@ -50,7 +50,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden lg:flex items-center gap-2">
           {['ky', 'ru', 'en'].map((lng, i) => (
             <React.Fragment key={lng}>
               <button
@@ -76,7 +76,7 @@ const Navbar = ({ theme, toggleTheme }) => {
         </motion.button>
 
         <button 
-          className="md:hidden text-violet-600 dark:text-white p-1" 
+          className="lg:hidden text-violet-600 dark:text-white p-1 ml-2" 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
@@ -92,23 +92,23 @@ const Navbar = ({ theme, toggleTheme }) => {
             className="fixed inset-0 h-screen w-full bg-white dark:bg-[#030712] flex flex-col justify-center items-center z-[105]"
           >
             <div className="flex flex-col items-center gap-12">
-              {navLinks.map((link, idx) => (
+              {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-5xl font-black text-violet-600 dark:text-white uppercase tracking-tighter"
+                  className="text-4xl font-black text-violet-600 dark:text-white uppercase tracking-tighter"
                 >
                   {link.name}
                 </a>
               ))}
 
-              <div className="flex gap-8 mt-4">
+              <div className="flex gap-6 mt-4">
                  {['ky', 'ru', 'en'].map((lng) => (
                    <button 
                     key={lng} 
                     onClick={() => { i18n.changeLanguage(lng); setIsMenuOpen(false); }} 
-                    className={`text-2xl font-black uppercase ${
+                    className={`text-xl font-black uppercase transition-all ${
                       i18n.language === lng ? 'text-violet-600 border-b-4 border-violet-500' : 'text-gray-300 dark:text-gray-600'
                     }`}
                   >

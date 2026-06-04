@@ -6,39 +6,12 @@
     "contact": "БАЙЛАНЫШ"
   },
   "hero": {
+    "fullName": "Zarina Momunbai",
     "role": "Frontend / Full-Stack Иштеп Чыгуучу",
     "location": "Кыргызстан",
-    "summary": "Мен ойлонулган, адамга багытталган веб-тажрыйбаларды түзөм — таза код эмпатия, тактык жана максат менен кошулат.",
+    "summary": "React, Next.js жана Node.js экосистемасында жогорку өндүрүмдүү веб-тиркемелерди архитектуралоодо 2,5 жылдан ашык тажрыйбасы бар Full-Stack иштеп чыгуучу. Production-grade аутентификация, татаал state башкаруу жана көп валюталуу реляциялык маалымат архитектураларында адистешкен. Эл аралык командаларда сапаттуу документация жана коммуникация үчүн тилдик бэкграундду колдонот.",
     "cta": "Долбоорлорду Көрүү",
     "availability": "Жаңы сунуштарга ачыкмын"
-  },
-  "featured": {
-    "badge": "Иштеп Турган Долбоор",
-    "title": "Batken Travels",
-    "subtitle": "Саякат Брондоо Платформасы",
-    "description": "Колдонуучуларды аутентификациялоо, саякаттарды издөө, брондоо системасы, админ панели жана көп тилдүү колдоо менен толук саякат брондоо веб-тиркемеси. React, Node.js, Express жана MongoDB менен нөлдөн түзүлгөн.",
-    "liveUrl": "batkentravels.com",
-    "tempUrl": "batkentravels.netlify.app",
-    "viewLive": "Сайтты Ачуу",
-    "features": {
-      "title": "Негизги Функциялар",
-      "items": [
-        "Аутентификация жана Корголгон Маршруттар",
-        "Динамикалык Издөө жана Чыпкалоо",
-        "Толук Брондоо Системасы",
-        "Башкаруу үчүн Админ Панели",
-        "Көп Тилдүү Колдоо (EN/RU/KG)",
-        "Толук Адаптивдүү Дизайн",
-        "Cloudinary аркылуу Сүрөт Жүктөө",
-        "SEO Оптимизацияланган"
-      ]
-    },
-    "tech": {
-      "title": "Технологиялар",
-      "frontend": "React.js, CSS3, Axios, React Router",
-      "backend": "Node.js, Express, MongoDB, Cloudinary",
-      "features": "JWT Auth, REST API, Nodemailer"
-    }
   },
   "about": {
     "title": "Мен Киммин",
@@ -115,16 +88,17 @@
       ]
     },
     "education": "Билим",
-    "university": "Баткен Мамлекеттик Университети",
-    "degree": "Англис тилин окутуу факультети (4-курс)",
-    "period": "2021 – Учурда",
+    "university": "КНУнун алдындагы Баткен облустук көп тармактуу институту",
+    "degree": "Англис тили жана адабияты боюнча билим берүү бакалавры",
+    "period": "2022-сен – 2026-май",
     "languages": "Тилдер"
   },
   "skills": {
     "title": "Техникалык Көндүмдөр",
     "frontend": "Frontend",
-    "backend": "Backend",
-    "tools": "Куралдар"
+    "backendApi": "Backend жана API",
+    "database": "База жана ORM",
+    "devops": "Тестирлөө жана DevOps"
   },
   "contact": {
     "title": "Байланышуу",
@@ -143,36 +117,52 @@
   },
   "projects": {
     "title": "Тандалган Долбоорлор",
-    "viewProject": "Долбоорду Көрүү",
+    "viewProject": "Түз Ачуу",
+    "comingSoon": "Жакында",
     "sourceCode": "Булак Коду",
+    "categories": {
+      "fullStack": "Full-Stack / Продуктивдүүлүк",
+      "frontend": "Frontend Инженерия"
+    },
+    "demos": {
+      "title": "Системалык Демолор",
+      "subtitle": "LifeOS жана Batken Travels системаларынын интерактивдүү обозору.",
+      "lifeos": "LifeOS",
+      "batkenTravels": "Batken Travels",
+      "walkthrough": "Система Обозору",
+      "placeholderTitle": "{{name}} демо алдын ала көрүү",
+      "placeholderHint": "Видео даярдалганча тирүү тиркемени карап чыгыңыз.",
+      "viewLive": "Тирүү тиркемени ачуу"
+    },
     "items": [
       {
-        "title": "Аутентификация Системасы",
-        "description": "JWT, OTP жана ролдорго негизделген коопсуздук системасы. Профессионалдык интерфейс жана көп тилдүү колдоо.",
-        "type": "Full Stack",
-        "tags": ["React", "Node.js", "MongoDB", "JWT"]
+        "title": "🧬 LifeOS | Жеке Экосистема",
+        "description": "Liquid Glassmorphism интерфейси менен премиум продуктивдүүлүк пакети: PIN-аутентификация, макро-дашборддор, ниеттер движогу, биометрикалык энергия логгер жана көп валютадагы wealth-дашборд.",
+        "type": "Full-Stack",
+        "tags": ["Next.js", "TypeScript", "Supabase", "Prisma", "Vitest", "TailwindCSS"]
       },
       {
-        "title": "Брондоо Системасы",
-        "description": "Туристтик брондоо платформасы, издөө жана WhatsApp интеграциясы менен. Админ панели камтылган.",
-        "type": "Full Stack",
-        "tags": ["MERN Stack", "WhatsApp API", "Cloudinary"]
+        "title": "✈️ Batken Travels",
+        "description": "Саякат брондоо full-stack тиркемеси: аутентификация, корголгон маршруттар, издөө жана чыпкалоо, брондоо системасы жана админ панели.",
+        "type": "Full-Stack",
+        "tags": ["React", "Node.js", "Express", "MongoDB", "JWT"]
       },
       {
-        "title": "Админ Панели",
-        "description": "Динамикалык таблицалар жана маалыматтарды башкаруу үчүн ролдорго негизделген башкаруу панели.",
-        "type": "Backend / UI",
-        "tags": ["React", "Express", "Data Viz"]
-      },
-      {
-        "title": "Портфолио Сайты",
-        "description": "Заманбап портфолио, караңгы режим, көп тилдүүлүк жана таза архитектура менен түзүлгөн.",
+        "title": "🚀 React Labs",
+        "description": "Мини-тиркемелерден турган инженердик workspace: мемоизацияланган издөө/сорттоо, debounced API streaming, адаптивдүү катмарлар жана Zustand менен татаал state.",
         "type": "Frontend",
-        "tags": ["React", "Tailwind", "i18next"]
+        "tags": ["React19", "ReactRouter7", "Zustand5", "TypeScript", "Vitest", "Vite7"]
+      },
+      {
+        "title": "💻 Портфолио (ZARI.DEV)",
+        "description": "Backdrop-blur, жарык/караңгы тема, i18n жана таза архитектура менен заманбап портфолио.",
+        "type": "Frontend",
+        "tags": ["React", "TailwindCSS", "i18next", "Vercel"]
       }
     ]
   },
   "footer": {
-    "rights": "© 2025 Zarina. Бардык укуктар корголгон."
+    "copyright": "© 2026 Zari.dev. Бардык укуктар корголгон.",
+    "rights": "© 2026 Zari.dev. Бардык укуктар корголгон."
   }
 }

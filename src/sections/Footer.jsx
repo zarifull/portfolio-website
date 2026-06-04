@@ -5,7 +5,7 @@ import { CONTACT_INFO } from '../data/contuctData';
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer className="max-w-7xl mx-auto px-6 py-12 border-t border-slate-900 mt-20 flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="max-w-7xl mx-auto px-6 py-12 border-t border-slate-200 dark:border-slate-800 mt-20 flex flex-col md:flex-row justify-between items-center gap-6 overflow-hidden">
       <p className="text-slate-500 text-sm">
         {t('footer.copyright')}
       </p>

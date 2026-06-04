@@ -1,28 +1,33 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next' 
-import { Code2, Server, Wrench } from 'lucide-react'
-import { SKILLS_DATA } from '../data/skillsData' 
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Code2, Server, Database, FlaskConical } from 'lucide-react';
+import { SKILLS_DATA } from '../data/skillsData';
 
 export function Skills() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const skills = [
     {
-      category: t('skills.frontend'), 
+      category: t('skills.frontend'),
       icon: <Code2 className="w-6 h-6 text-violet-500" />,
       items: SKILLS_DATA.frontend,
     },
     {
-      category: t('skills.backend'),
+      category: t('skills.backendApi'),
       icon: <Server className="w-6 h-6 text-violet-500" />,
-      items: SKILLS_DATA.backend,
+      items: SKILLS_DATA.backendApi,
     },
     {
-      category: t('skills.tools'),
-      icon: <Wrench className="w-6 h-6 text-violet-500" />,
-      items: SKILLS_DATA.tools,
+      category: t('skills.database'),
+      icon: <Database className="w-6 h-6 text-violet-500" />,
+      items: SKILLS_DATA.database,
     },
-  ]
+    {
+      category: t('skills.devops'),
+      icon: <FlaskConical className="w-6 h-6 text-violet-500" />,
+      items: SKILLS_DATA.devops,
+    },
+  ];
 
   return (
     <section className="py-24 bg-white dark:bg-slate-900 transition-colors duration-300">
@@ -31,20 +36,20 @@ export function Skills() {
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
             {t('skills.title')}
           </h2>
-          <div className="w-20 h-1 bg-violet-500 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-violet-500 mx-auto rounded-full" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
           {skills.map((skillGroup, index) => (
             <div
               key={index}
               className="p-8 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-gray-100 dark:border-slate-700 hover:border-violet-500 dark:hover:border-violet-500 transition-all duration-300 group"
             >
               <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 rounded-lg bg-white dark:bg-slate-800 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <div className="p-3 rounded-lg bg-white dark:bg-slate-800 shadow-sm group-hover:scale-110 transition-transform duration-300 shrink-0">
                   {skillGroup.icon}
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white leading-tight">
                   {skillGroup.category}
                 </h3>
               </div>
@@ -63,6 +68,7 @@ export function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-export default Skills
+
+export default Skills;

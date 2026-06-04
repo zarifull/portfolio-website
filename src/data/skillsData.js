@@ -1,15 +1,37 @@
 export const SKILLS_DATA = {
-    frontend: [
-      'React.js', 'React Router', 'JavaScript (ES6+)', 'HTML5 & CSS3',
-      'Context API', 'Protected Routes', 'i18next', 'Axios/Fetch',
-      'Responsive Design', 'Tailwind CSS',
-    ],
-    backend: [
-      'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JWT Auth',
-      'REST API', 'Middleware', 'Multer Uploads', 'Error Handling', 'Validation',
-    ],
-    tools: [
-      'Git & GitHub', 'Postman', 'VS Code', 'npm', 'Cloudinary',
-      'Vercel', 'Figma', 'Chrome DevTools',
-    ],
-  };
+  frontend: [
+    'Next.js 15/16',
+    'App Router',
+    'Turbopack',
+    'React.js',
+    'TypeScript',
+    'JavaScript (ES6+)',
+    'Tailwind CSS',
+    'Context API',
+    'Next-Intl (Localization)',
+  ],
+  backendApi: [
+    'Node.js',
+    'Express.js',
+    'Server Actions',
+    'RESTful APIs',
+    'Next.js Route Handlers',
+    'JWT Auth',
+    'Custom Middleware Proxies',
+  ],
+  database: [
+    'PostgreSQL',
+    'Supabase SSR Auth',
+    'Prisma ORM',
+    'MongoDB',
+    'Mongoose',
+  ],
+  devops: [
+    'Vitest (Unit/Integration)',
+    'Git/GitHub',
+    'Postman',
+    'Vercel',
+    'Render',
+    'Cloudinary',
+  ],
+};

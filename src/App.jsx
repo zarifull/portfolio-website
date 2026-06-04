@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import Footer from './sections/Footer';
 import { Projects } from './sections/Projects';
-import FeaturedProject from './sections/FueturedProjects';
 import Skills from './sections/Skills';
 import { About } from './sections/About';
 import Contuct from './sections/Contact'
@@ -32,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#030712] text-slate-900 dark:text-white transition-colors duration-500 relative overflow-hidden">
+    <div className="min-h-screen bg-white dark:bg-[#030712] text-slate-900 dark:text-white transition-colors duration-500 relative overflow-x-hidden">
       
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none opacity-0 dark:opacity-100 transition-opacity duration-500">
         <motion.div 
@@ -45,10 +44,9 @@ function App() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         
-        <main className="flex-grow pt-0"> 
+        <main className="flex-grow pt-0 overflow-x-hidden">
           <Hero />
-          <section id="projects" className="px-6 md:px-16 min-h-[500px]">
-            <FeaturedProject />
+          <section id="projects" className="px-6 md:px-16 min-h-[500px] overflow-x-hidden">
             <Projects />
             <Skills />
             <About />

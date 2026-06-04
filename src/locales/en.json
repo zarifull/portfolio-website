@@ -6,39 +6,12 @@
     "contact": "CONTACT"
   },
   "hero": {
+    "fullName": "Zarina Momunbai",
     "role": "Frontend / Full-Stack Developer",
     "location": "Kyrgyzstan",
-    "summary": "I build thoughtful, human-centered web experiences — where clean code meets empathy, clarity, and purpose.",
+    "summary": "Results-driven Full-Stack Developer with over 2.5 years of experience architecting high-performance web applications using React, Next.js, and Node.js ecosystems. Specialized in engineering production-grade authentication workflows, complex state management systems, and multi-currency relational data architectures. Leverages a strong linguistic background to deliver exceptional documentation and cross-functional communication within international teams.",
     "cta": "View Projects",
     "availability": "Available for new opportunities"
-  },
-  "featured": {
-    "badge": "Live Production Project",
-    "title": "Batken Travels",
-    "subtitle": "Full-Stack Travel Booking Platform",
-    "description": "A complete travel booking web application with user authentication, tour search, booking system, admin dashboard, and multilingual support. Built from scratch with React, Node.js, Express, and MongoDB.",
-    "liveUrl": "batkentravels.com",
-    "tempUrl": "batkentravels.netlify.app",
-    "viewLive": "View Live Site",
-    "features": {
-      "title": "Key Features",
-      "items": [
-        "User Authentication & Protected Routes",
-        "Dynamic Tour Search & Filtering",
-        "Complete Booking System",
-        "Admin Dashboard for Management",
-        "Multilingual Support (EN/RU/KG)",
-        "Fully Responsive Design",
-        "Image Upload with Cloudinary",
-        "SEO Optimized"
-      ]
-    },
-    "tech": {
-      "title": "Tech Stack",
-      "frontend": "React.js, CSS3, Axios, React Router",
-      "backend": "Node.js, Express, MongoDB, Cloudinary",
-      "features": "JWT Auth, REST API, Nodemailer"
-    }
   },
   "about": {
     "title": "Who I Am",
@@ -115,16 +88,17 @@
       ]
     },
     "education": "Education",
-    "university": "Batken State University",
-    "degree": "Faculty of English Language Teaching (4th year)",
-    "period": "2021 – Present",
+    "university": "Batken Regional Multidisciplinary Institute under KNU",
+    "degree": "Bachelor of Education in English Language and Literature",
+    "period": "Sep 2022 – May 2026",
     "languages": "Languages"
   },
   "skills": {
     "title": "Technical Skills",
     "frontend": "Frontend",
-    "backend": "Backend",
-    "tools": "Tools"
+    "backendApi": "Backend & API",
+    "database": "Database & ORM",
+    "devops": "Testing & DevOps"
   },
   "contact": {
     "title": "Get In Touch",
@@ -143,36 +117,52 @@
   },
   "projects": {
     "title": "Featured Projects",
-    "viewProject": "View Project",
+    "viewProject": "View Live",
+    "comingSoon": "Coming Soon",
     "sourceCode": "Source Code",
+    "categories": {
+      "fullStack": "Full-Stack / Productivity",
+      "frontend": "Frontend Engineering"
+    },
+    "demos": {
+      "title": "System Demos",
+      "subtitle": "Interactive walkthroughs — switch between LifeOS and Batken Travels.",
+      "lifeos": "LifeOS",
+      "batkenTravels": "Batken Travels",
+      "walkthrough": "System Walkthrough",
+      "placeholderTitle": "{{name}} demo preview",
+      "placeholderHint": "Explore the live application while the walkthrough video is being prepared.",
+      "viewLive": "View Live App"
+    },
     "items": [
       {
-        "title": "Full Authentication System",
-        "description": "Advanced security system with JWT, OTP verification, and role-based access control. Features multilingual support and professional UI flows.",
-        "type": "Full Stack",
-        "tags": ["React", "Node.js", "MongoDB", "JWT"]
+        "title": "🧬 LifeOS | Personal Ecosystem",
+        "description": "A premium, high-performance productivity suite built with a surgical Liquid Glassmorphism interface. Features an entry PIN-code auth layer, macro temporal dashboards, tactical today/tomorrow intentions engine, dynamic biometric energy logger, and a comprehensive wealth dashboard calculating live derived financial states across multiple currencies.",
+        "type": "Full-Stack",
+        "tags": ["Next.js", "TypeScript", "Supabase", "Prisma", "Vitest", "TailwindCSS"]
       },
       {
-        "title": "Booking System",
-        "description": "Comprehensive tour booking platform with search, filtering, and WhatsApp integration. Includes admin dashboard for managing tours and bookings.",
-        "type": "Full Stack",
-        "tags": ["MERN Stack", "WhatsApp API", "Cloudinary"]
+        "title": "✈️ Batken Travels",
+        "description": "A complete full-stack travel booking web application featuring secure user authentication, protected routing, an interactive tour search and filtering engine, a comprehensive booking system, and an admin management dashboard.",
+        "type": "Full-Stack",
+        "tags": ["React", "Node.js", "Express", "MongoDB", "JWT"]
       },
       {
-        "title": "Admin Dashboard",
-        "description": "Role-based administration panel with dynamic data tables, real-time updates, and multi-language support for content management.",
-        "type": "Backend / UI",
-        "tags": ["React", "Express", "Data Viz"]
-      },
-      {
-        "title": "Portfolio Website",
-        "description": "Modern, responsive developer portfolio with dark mode, internationalization, and clean architectural design.",
+        "title": "🚀 React Labs",
+        "description": "A multi-page engineering workspace comprising specialized mini-applications designed to solve core architectural challenges including memoized search/sort data processing, debounced API streaming, custom responsive layering, and complex persistent state management with Zustand.",
         "type": "Frontend",
-        "tags": ["React", "Tailwind", "i18next"]
+        "tags": ["React19", "ReactRouter7", "Zustand5", "TypeScript", "Vitest", "Vite7"]
+      },
+      {
+        "title": "💻 Portfolio Website (ZARI.DEV)",
+        "description": "A modern, blazing-fast, and responsive developer portfolio featuring deep backdrop-blur layouts, light/dark mode toggles, internationalization, and clean architectural design.",
+        "type": "Frontend",
+        "tags": ["React", "TailwindCSS", "i18next", "Vercel"]
       }
     ]
   },
   "footer": {
-    "rights": "© 2025 Zarina. All rights reserved."
+    "copyright": "© 2026 Zari.dev. All rights reserved.",
+    "rights": "© 2026 Zari.dev. All rights reserved."
   }
 }

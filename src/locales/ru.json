@@ -6,39 +6,12 @@
     "contact": "КОНТАКТЫ"
   },
   "hero": {
+    "fullName": "Zarina Momunbai",
     "role": "Frontend / Full-Stack Разработчик",
     "location": "Кыргызстан",
-    "summary": "Я создаю продуманные, ориентированные на людей веб-приложения — где чистый код встречается с эмпатией, ясностью и целью.",
+    "summary": "Full-Stack разработчик с более чем 2,5 годами опыта в создании высокопроизводительных веб-приложений на React, Next.js и Node.js. Специализируюсь на production-grade аутентификации, сложном управлении состоянием и мультивалютных реляционных архитектурах данных. Использую лингвистический бэкграунд для качественной документации и эффективной коммуникации в международных командах.",
     "cta": "Смотреть Проекты",
     "availability": "Открыта к новым предложениям"
-  },
-  "featured": {
-    "badge": "Действующий Проект",
-    "title": "Batken Travels",
-    "subtitle": "Платформа Бронирования Туров",
-    "description": "Полноценное веб-приложение для бронирования туров с аутентификацией пользователей, поиском туров, системой бронирования, админ-панелью и многоязычной поддержкой. Создано с нуля на React, Node.js, Express и MongoDB.",
-    "liveUrl": "batkentravels.com",
-    "tempUrl": "batkentravels.netlify.app",
-    "viewLive": "Открыть Сайт",
-    "features": {
-      "title": "Основные Функции",
-      "items": [
-        "Аутентификация и Защищенные Маршруты",
-        "Динамический Поиск и Фильтрация Туров",
-        "Полная Система Бронирования",
-        "Админ-Панель для Управления",
-        "Многоязычная Поддержка (EN/RU/KG)",
-        "Адаптивный Дизайн",
-        "Загрузка Изображений через Cloudinary",
-        "SEO Оптимизация"
-      ]
-    },
-    "tech": {
-      "title": "Технологии",
-      "frontend": "React.js, CSS3, Axios, React Router",
-      "backend": "Node.js, Express, MongoDB, Cloudinary",
-      "features": "JWT Auth, REST API, Nodemailer"
-    }
   },
   "about": {
     "title": "Кто Я",
@@ -115,16 +88,17 @@
       ]
     },
     "education": "Образование",
-    "university": "Баткенский Государственный Университет",
-    "degree": "Факультет преподавания английского языка (4 курс)",
-    "period": "2021 – Настоящее время",
+    "university": "Баткенский региональный многопрофильный институт при КНУ",
+    "degree": "Бакалавр педагогического образования по английскому языку и литературе",
+    "period": "Сен 2022 – Май 2026",
     "languages": "Языки"
   },
   "skills": {
     "title": "Технические Навыки",
     "frontend": "Frontend",
-    "backend": "Backend",
-    "tools": "Инструменты"
+    "backendApi": "Backend и API",
+    "database": "База данных и ORM",
+    "devops": "Тестирование и DevOps"
   },
   "contact": {
     "title": "Связаться со мной",
@@ -143,36 +117,52 @@
   },
   "projects": {
     "title": "Избранные Проекты",
-    "viewProject": "Смотреть Проект",
+    "viewProject": "Открыть",
+    "comingSoon": "Скоро",
     "sourceCode": "Исходный Код",
+    "categories": {
+      "fullStack": "Full-Stack / Продуктивность",
+      "frontend": "Frontend-инженерия"
+    },
+    "demos": {
+      "title": "Системные Демо",
+      "subtitle": "Интерактивные обзоры — переключайтесь между LifeOS и Batken Travels.",
+      "lifeos": "LifeOS",
+      "batkenTravels": "Batken Travels",
+      "walkthrough": "Обзор Системы",
+      "placeholderTitle": "Превью демо {{name}}",
+      "placeholderHint": "Изучите живое приложение, пока готовится видеообзор.",
+      "viewLive": "Открыть приложение"
+    },
     "items": [
       {
-        "title": "Система Аутентификации",
-        "description": "Безопасная система с JWT, OTP и ролями пользователей. Профессиональный UI и поддержка нескольких языков.",
-        "type": "Full Stack",
-        "tags": ["React", "Node.js", "MongoDB", "JWT"]
+        "title": "🧬 LifeOS | Личная Экосистема",
+        "description": "Премиальный высокопроизводительный набор продуктивности с интерфейсом Liquid Glassmorphism: PIN-аутентификация, макро-дашборды, движок намерений, биометрический логгер энергии и wealth-дашборд с расчётом финансов в нескольких валютах.",
+        "type": "Full-Stack",
+        "tags": ["Next.js", "TypeScript", "Supabase", "Prisma", "Vitest", "TailwindCSS"]
       },
       {
-        "title": "Система Бронирования",
-        "description": "Платформа для бронирования туров с поиском и интеграцией WhatsApp. Включает админ-панель.",
-        "type": "Full Stack",
-        "tags": ["MERN Stack", "WhatsApp API", "Cloudinary"]
+        "title": "✈️ Batken Travels",
+        "description": "Полноценное full-stack приложение для бронирования туров: аутентификация, защищённые маршруты, поиск и фильтрация, система бронирования и админ-панель.",
+        "type": "Full-Stack",
+        "tags": ["React", "Node.js", "Express", "MongoDB", "JWT"]
       },
       {
-        "title": "Админ Панель",
-        "description": "Панель управления с динамическими таблицами, обновлениями в реальном времени и управлением контентом.",
-        "type": "Backend / UI",
-        "tags": ["React", "Express", "Data Viz"]
-      },
-      {
-        "title": "Сайт-Портфолио",
-        "description": "Современное портфолио с темным режимом, интернационализацией и чистой архитектурой.",
+        "title": "🚀 React Labs",
+        "description": "Многостраничная инженерная среда с мини-приложениями: мемоизированный поиск/сортировка, debounced API streaming, адаптивные слои и Zustand для сложного состояния.",
         "type": "Frontend",
-        "tags": ["React", "Tailwind", "i18next"]
+        "tags": ["React19", "ReactRouter7", "Zustand5", "TypeScript", "Vitest", "Vite7"]
+      },
+      {
+        "title": "💻 Портфолио (ZARI.DEV)",
+        "description": "Современное быстрое портфолио с backdrop-blur, светлой/тёмной темой, интернационализацией и чистой архитектурой.",
+        "type": "Frontend",
+        "tags": ["React", "TailwindCSS", "i18next", "Vercel"]
       }
     ]
   },
   "footer": {
-    "rights": "© 2025 Zarina. Все права защищены."
+    "copyright": "© 2026 Zari.dev. Все права защищены.",
+    "rights": "© 2026 Zari.dev. Все права защищены."
   }
 }
