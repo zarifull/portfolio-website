@@ -1,6 +1,4 @@
-*.mov
-*.mp4
-*.webm
+
 # Logs
 logs
 *.log
