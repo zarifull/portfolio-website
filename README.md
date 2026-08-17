@@ -1,61 +1,62 @@
-🚀 Professional Portfolio | Zarina
+# Portfolio — Zarina Momunbai
 
-A modern, high-performance personal portfolio website built with React 18, Vite, and Tailwind CSS. This project showcases my work, skills, and provides a direct channel for communication via an integrated contact form.
+Personal portfolio website showcasing projects, skills, and contact information.
 
-✨ Key Features
-🌍 Multi-language Support: Fully localized in English, Russian, and Kyrgyz using i18next.
+🔗 **Live Demo:** [zari-dev-website.vercel.app](https://zari-dev-website.vercel.app)
 
-🌙 Dark Mode Optimized: Seamless theme switching between light and dark modes using Tailwind CSS.
+---
 
-📱 Fully Responsive: Optimized for all devices—from small mobile screens to large desktop monitors.
+## Features
 
-📩 Contact Integration: Functional contact form powered by EmailJS (direct-to-email delivery).
+- **3-language support** — English, Russian, Kyrgyz via i18next
+- **Dark / Light mode** — Theme switching with Tailwind CSS
+- **Contact form** — Functional email delivery via EmailJS
+- **Fully responsive** — Mobile to desktop
+- **Fast builds** — Vite with HMR
 
-⚡ Blazing Fast: Built with Vite for instant Hot Module Replacement (HMR) and optimized production builds.
+---
 
-🎨 Modern UI: Clean, professional aesthetic using Lucide React icons and smooth transitions.
+## Tech Stack
 
-🛠️ Tech Stack
 | Tool | Purpose |
-| :--- | :--- |
-| **React** | Component-based UI development |
-| **Vite** | Modern frontend build tool |
-| **Tailwind CSS** | Utility-first styling and responsive design |
-| **i18next** | Internationalization framework |
-| **EmailJS** | Client-side email integration |
-| **Lucide React** | High-quality SVG icon set |
+|---|---|
+| React 18 | UI components |
+| Vite | Build tool |
+| Tailwind CSS | Styling |
+| i18next | Internationalization |
+| EmailJS | Contact form delivery |
+| Lucide React | Icons |
 
-🚀 Getting Started
-To run this project locally, follow these steps:
+---
 
-1. Clone the repository
+## Run Locally
+
+```bash
 git clone https://github.com/zarifull/zari-dev-website.git
 cd zari-dev-website
-
-2. Install dependencies
 npm install
+npm run dev
+```
 
-3. Environment Variables
-Create a .env file in the root directory and add your EmailJS credentials:
+Create `.env`:
+
+```env
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-4. Run Development Server
-npm run dev
+---
 
-📦 Deployment
-This project is automatically deployed via Vercel. Every push to the main branch triggers a new production build.
+## Deployment
 
-🔗 Live Demo: zari-dev-website.vercel.app
+9 production deployments via Vercel.
+Auto-deploys on every push to main.
 
-📝 License
-This project is open-source and available under the MIT License.
+---
 
-📫 Contact Me
-LinkedIn: zarina-momunbai
+## Contact
 
-GitHub: @zarifull
-
-Email: zaarinaakhan@gmail.com
-
+📧 zarinamomunbaikyzy@gmail.com
+💼 [LinkedIn](https://www.linkedin.com/in/zarina-momunbai/)
+🐙 [GitHub](https://github.com/zarifull)
